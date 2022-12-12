@@ -28,9 +28,6 @@ if track["artwork_url"]
 end
 %>
 
-<%= track["description"].linkify.to_paragraphs.esc %>
-
-&lt;p>&lt;a href="<%= request.root_url %>/soundcloud/download<%= Addressable::URI.new(query: "url=#{track["permalink_url"]}").normalize.to_s %>">Download track&lt;/a>&lt;/p>
     </content>
   </entry>
 <%- end -%>
